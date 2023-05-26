@@ -23,11 +23,10 @@ function onClick(evt) {
     if(evt.target.tagName !== 'IMG') {
         return
     }
+}
 
-    new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
         captionDelay: 250,
         captionsData: 'alt',
         captionPosition: 'bottom',
     });
-
-}
