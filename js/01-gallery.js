@@ -6,7 +6,7 @@ import { galleryItems } from './gallery-items.js';
 
 const list = document.querySelector('.gallery')
 
-function createGalleryMarkUp(items) {
+function markup(items) {
     return items.map((item) => `<li class="gallery__item">
     <a class="gallery__link" href="${item.original}">
       <img
@@ -19,8 +19,8 @@ function createGalleryMarkUp(items) {
     </li>`).join("")
 }
 
-const addGallaryMarkUp = createGalleryMarkUp(galleryItems)
-list.insertAdjacentHTML('beforeend', addGallaryMarkUp)
+
+list.insertAdjacentHTML('beforeend', markup(galleryItems))
 
 
 list.addEventListener('click', onClick) 
