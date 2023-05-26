@@ -19,14 +19,13 @@ list.insertAdjacentHTML('beforeend', markup(galleryItems))
 list.addEventListener('click', onClick) 
 function onClick(evt) {
     evt.preventDefault()
-
     if(evt.target.tagName !== 'IMG') {
         return
     }
 }
 
-new SimpleLightbox('.gallery a', {
+ new SimpleLightbox('.gallery a', {
         captionDelay: 250,
         captionsData: 'alt',
         captionPosition: 'bottom',
-    });
+    }); 
