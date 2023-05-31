@@ -27,5 +27,5 @@ function onClick(evt) {
  new SimpleLightbox('.gallery a', {
         captionDelay: 250,
         captionsData: 'alt',
-        captionPosition: 'bottom',
+        captionPosition: 'bottom'
     }); 
